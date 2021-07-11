@@ -341,6 +341,11 @@ select:disabled {
   opacity: 1;
 }
 
+.contact-me {
+
+  background-color: #066173;
+}
+
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
@@ -3353,13 +3358,35 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+#socialDiv {
+  display: flex;
+  width: 75%;
+  height: 150%;
+  justify-content: center;
+  margin: auto;
+  /* background-color: red; */
+}
+
+#socialDiv a {
+  border-color: #aaaaaa;
+  color: #2c3e50;
+  align-self: center;
+  /* height: 75%;
+  width: 16%; */
+}
+
+#socialDiv a:hover {
+  color: rgb(255, 255, 255); 
+  background-color: #aaaaaa;
+}
+
 .btn-outline-light {
   color: #f8f9fa;
   border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
-  color: #000;
-  background-color: #f8f9fa;
+  color: rgb(255, 255, 255);
+  background-color: #aaaaaa;
   border-color: #f8f9fa;
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
@@ -3401,6 +3428,18 @@ textarea.form-control-lg {
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
   background-color: transparent;
+}
+
+#noAppStore {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#backToTop {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight:bolder;
 }
 
 .btn-link {
@@ -10974,7 +11013,7 @@ html {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+#mainNav .navbar-nav li.nav-item a.nav-link:hover, #backToTop:hover {
   color: #1abc9c;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {

@@ -52,3 +52,23 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Prevent page reload when submitting form
+let senderName = document.getElementById("name");
+let senderEmail = document.getElementById("email");
+let senderPhone = document.getElementById("phone");
+let senderMessage = document.getElementById("message");
+let submitButton = document.getElementById("submitButton");
+let sendMessage = document.getElementById("sendMessage");
+let form = document.getElementById("contactForm");
+
+submitButton.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    if (senderName.value !== "" && senderEmail.value !== "" && senderPhone.value !== "" && senderMessage.value !== "") {
+        form.submit()
+    } else {
+        console.log("error")
+    }
+})
